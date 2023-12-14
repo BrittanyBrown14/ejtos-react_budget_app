@@ -9,6 +9,11 @@ import Budget from './components/Budget';
 
 
 import { AppProvider } from './context/AppContext';
+import Remaining from './components/Remaining';
+import ExpenseTotal from './components/ExpenseTotal';
+import ExpenseList from './components/ExpenseTotal';
+import ExpenseItem from './components/ExpenseTotal';
+import AllocationForm from './components/AllocationForm';
 const App = () => {
     return (
         <AppProvider>
@@ -17,26 +22,45 @@ const App = () => {
                     <div className='row mt-3'>
                         {
                             /* Add Budget component here */
+                            // Budget component
+                            <div className='col-sm'>
+                                <Budget />
+                            </div>
                         }        
 
                         {
                             /* Add Remaining component here*/
+                            <div className='col-sm'>
+                                <Remaining />
+                            </div>
                         }        
 
                         {
-                            /* Add ExpenseTotal component here */
+                            /* Add ExpenseTotal component here */                            /* Add Remaining component here*/
+                            <div className='col-sm'>
+                                <ExpenseTotal />
+                            </div>
                         }        
                        
                         {
-                            /* Add ExpenseList component here */
+                            /* Add ExpenseList component here */                            /* Add Remaining component here*/
+                            <div className='col-sm'>
+                                <ExpenseList />
+                            </div>
                         }         
 
                         {
-                            /* Add ExpenseItem component here */
+                            /* Add ExpenseItem component here */                            /* Add Remaining component here*/
+                            <div className='col-sm'>
+                                <ExpenseItem />
+                            </div>
                         }        
 
                         {
-                            /* Add AllocationForm component here under */
+                            /* Add AllocationForm component here under */                            /* Add Remaining component here*/
+                            <div className='col-sm'>
+                                <AllocationForm />
+                            </div>
                         }        
 
                 </div>
